@@ -7,6 +7,7 @@ from PyQt5.QtGui import QImage, QPixmap
 import datetime
 from deep_sort_realtime.deepsort_tracker import DeepSort
 import time
+import socket as sk
 
 
 # Initialize DeepSort
@@ -390,10 +391,12 @@ class ProcessVideo():
                     pass
 
             avg_speed = total_speed_sum / total_people_count if total_people_count > 0 else 0
+            
+            self.start_udp(total_people_count,avg_speed)
+
             print(f"Total People: {total_people_count}, Avg Speed: {avg_speed:.2f}")
             cv2.putText(image, f"Total People: {total_people_count}, Avg Speed: {avg_speed:.2f}", tuple([self.width - 600, 30]), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
-
-
+    
 
             self.frame_count += 1
             target_time = datetime.datetime.now() + datetime.timedelta(seconds=1 / self.fps)
@@ -403,7 +406,19 @@ class ProcessVideo():
             
             
             return image
+    
+    def start_udp(self,total_people_count,avg_speed):
 
+            UDP_IP = '192.168.32.238'
+
+            UDP_PORT = 5000
+            sk2 = sk.socket(sk.AF_INET,sk.SOCK_DGRAM)
+            #sk2.sendto(( f"Total People: {total_people_count}, Avg Speed: {avg_speed:.2f}").encode(), (UDP_IP, UDP_PORT))
+            sk2.sendto(( f"{total_people_count}, {avg_speed:.2f}").encode(), (UDP_IP, UDP_PORT))
+            #sk2.sendto(( f"{avg_speed:.2f}").encode(), (UDP_IP, UDP_PORT))
+
+
+    
 
 
 
