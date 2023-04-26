@@ -8,4 +8,4 @@
 
 Sonicstride is a sound interactive system that connects the city and the body. It connects the real-time data of the environment (crowd density, movement speed) with the user's own data (movement speed) and interprets it through a sound interactive design, allowing the user to listen to the sound of his or her own walking speed and the environment in a specific urban space, thus strengthening the positive interaction between the environment and the body.
 
-![image](Key_Vision.jpg)
+![image](Image/Key_Vision.jpg)
