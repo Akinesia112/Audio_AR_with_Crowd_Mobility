@@ -11,3 +11,5 @@ Sonicstride is a sound interactive system that connects the city and the body. I
 ![image](Image/Key_Vision_Design.jpg)
 
 ![image](Image/Logo.jpg)
+
+ [![Watch the video]([https://img.youtube.com/vi/qzQPh8ecuPs/maxresdefault.jpg)](https://youtu.be/qzQPh8ecuPs](https://www.youtube.com/watch?v=UU0GFRJjhLY))
