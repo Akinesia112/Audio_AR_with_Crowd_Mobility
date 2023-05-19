@@ -12,4 +12,4 @@ Sonicstride is a sound interactive system that connects the city and the body. I
 
 ![image](Image/Logo.jpg)
 
- [![Watch the video][https://img.youtube](https://www.youtube.com/watch?v=UU0GFRJjhLY)
+![Watch the video](https://www.youtube.com/watch?v=UU0GFRJjhLY)
