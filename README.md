@@ -1,4 +1,4 @@
-# Sonicstride
+# The audio AR app with real-time crowd mobility data to create interactive urban soundscapes.
 
 𝙨𝙩𝙚𝙥 𝙞𝙣𝙩𝙤 𝙩𝙝𝙚 𝙬𝙤𝙧𝙡𝙙 𝙤𝙛 𝙨𝙤𝙪𝙣𝙙,
 
@@ -12,5 +12,4 @@ Sonicstride is a sound interactive system that connects the city and the body. I
 
 ![image](Image/Key_Vision_Design.jpg)
 
-![image](Image/Logo.jpg)
 
